@@ -8,33 +8,35 @@
     <title>ToDoList</title>
   </head>
   <body>
-    <form id="login_form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="Hello, who are you?"
-      />
-      <button>Log in</button>
-    </form>
-    <h2 id="clock"></h2>
-    <h1 id="saluting" class="hidden"></h1>
-    <form id="todo_form">
-      <input
-        type="text"
-        placeholder="Write What To Do and Press Enter"
-        required
-      />
-    </form>
-    <ul id="todo_list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather_container">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div id="container">
+      <div id="weather_container">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h2 id="clock"></h2>
+      <form id="login_form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="Hello, who are you?"
+        />
+        <button>Log in</button>
+      </form>
+      <h1 id="saluting" class="hidden"></h1>
+      <form id="todo_form">
+        <input
+          type="text"
+          placeholder="Write What To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo_list"></ul>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
     </div>
 
     <script src="./js/saluting.js"></script>

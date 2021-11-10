@@ -11,9 +11,21 @@ const images = [
   "bg10.jpeg",
 ];
 
+// const chosenImage = images[Math.floor(Math.random() * images.length)];
+
+// const bgImage = document.createElement("img");
+// bgImage.src = `./img/${chosenImage}`;
+
+// document.body.appendChild(bgImage);
+
+const body = document.querySelector("body");
 const chosenImage = images[Math.floor(Math.random() * images.length)];
+const createBgImg = () => {
+  const bgImage = document.createElement("img");
+  bgImage.src = `./img/${chosenImage}`;
+  bgImage.alt = "background image";
+  bgImage.classList.add("bgImg");
 
-const bgImage = document.createElement("img");
-bgImage.src = `./img/${chosenImage}`;
-
-document.body.appendChild(bgImage);
+  body.prepend(bgImage);
+};
+createBgImg();
